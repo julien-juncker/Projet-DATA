@@ -1,0 +1,519 @@
+[
+  {
+    "ID": 0,
+    "X": 265,
+    "Y": 780,
+    "Neighbours": [
+      {
+        "City": 32,
+        "Distance": 27
+      },
+      {
+        "City": 716,
+        "Distance": 36
+      },
+      {
+        "City": 311,
+        "Distance": 37
+      },
+      {
+        "City": 872,
+        "Distance": 44
+      },
+      {
+        "City": 38,
+        "Distance": 45
+      },
+      {
+        "City": 385,
+        "Distance": 45
+      },
+      {
+        "City": 604,
+        "Distance": 50
+      },
+      {
+        "City": 96,
+        "Distance": 53
+      },
+      {
+        "City": 325,
+        "Distance": 60
+      },
+      {
+        "City": 995,
+        "Distance": 60
+      }
+    ]
+  },
+  {
+    "ID": 1,
+    "X": 115,
+    "Y": 717,
+    "Neighbours": [
+      {
+        "City": 52,
+        "Distance": 4
+      },
+      {
+        "City": 978,
+        "Distance": 4
+      },
+      {
+        "City": 538,
+        "Distance": 18
+      },
+      {
+        "City": 440,
+        "Distance": 20
+      },
+      {
+        "City": 783,
+        "Distance": 22
+      },
+      {
+        "City": 613,
+        "Distance": 29
+      },
+      {
+        "City": 899,
+        "Distance": 29
+      },
+      {
+        "City": 481,
+        "Distance": 32
+      },
+      {
+        "City": 214,
+        "Distance": 43
+      },
+      {
+        "City": 844,
+        "Distance": 45
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "X": 15,
+    "Y": 441,
+    "Neighbours": [
+      {
+        "City": 3,
+        "Distance": 24
+      },
+      {
+        "City": 411,
+        "Distance": 36
+      },
+      {
+        "City": 688,
+        "Distance": 49
+      },
+      {
+        "City": 376,
+        "Distance": 53
+      },
+      {
+        "City": 117,
+        "Distance": 63
+      },
+      {
+        "City": 142,
+        "Distance": 64
+      },
+      {
+        "City": 172,
+        "Distance": 79
+      },
+      {
+        "City": 338,
+        "Distance": 81
+      },
+      {
+        "City": 845,
+        "Distance": 86
+      },
+      {
+        "City": 590,
+        "Distance": 89
+      }
+    ]
+  },
+  {
+    "ID": 3,
+    "X": 20,
+    "Y": 418,
+    "Neighbours": [
+      {
+        "City": 411,
+        "Distance": 14
+      },
+      {
+        "City": 2,
+        "Distance": 24
+      },
+      {
+        "City": 376,
+        "Distance": 30
+      },
+      {
+        "City": 142,
+        "Distance": 41
+      },
+      {
+        "City": 172,
+        "Distance": 58
+      },
+      {
+        "City": 845,
+        "Distance": 64
+      },
+      {
+        "City": 590,
+        "Distance": 66
+      },
+      {
+        "City": 688,
+        "Distance": 71
+      },
+      {
+        "City": 117,
+        "Distance": 72
+      },
+      {
+        "City": 913,
+        "Distance": 73
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "X": 355,
+    "Y": 151,
+    "Neighbours": [
+      {
+        "City": 370,
+        "Distance": 10
+      },
+      {
+        "City": 677,
+        "Distance": 21
+      },
+      {
+        "City": 207,
+        "Distance": 23
+      },
+      {
+        "City": 424,
+        "Distance": 29
+      },
+      {
+        "City": 559,
+        "Distance": 31
+      },
+      {
+        "City": 319,
+        "Distance": 37
+      },
+      {
+        "City": 598,
+        "Distance": 40
+      },
+      {
+        "City": 560,
+        "Distance": 44
+      },
+      {
+        "City": 170,
+        "Distance": 48
+      },
+      {
+        "City": 587,
+        "Distance": 48
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "X": 596,
+    "Y": 972,
+    "Neighbours": [
+      {
+        "City": 987,
+        "Distance": 18
+      },
+      {
+        "City": 964,
+        "Distance": 19
+      },
+      {
+        "City": 273,
+        "Distance": 25
+      },
+      {
+        "City": 197,
+        "Distance": 29
+      },
+      {
+        "City": 973,
+        "Distance": 34
+      },
+      {
+        "City": 68,
+        "Distance": 36
+      },
+      {
+        "City": 910,
+        "Distance": 38
+      },
+      {
+        "City": 628,
+        "Distance": 42
+      },
+      {
+        "City": 23,
+        "Distance": 44
+      },
+      {
+        "City": 746,
+        "Distance": 44
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "X": 755,
+    "Y": 99,
+    "Neighbours": [
+      {
+        "City": 469,
+        "Distance": 14
+      },
+      {
+        "City": 994,
+        "Distance": 16
+      },
+      {
+        "City": 242,
+        "Distance": 17
+      },
+      {
+        "City": 448,
+        "Distance": 19
+      },
+      {
+        "City": 137,
+        "Distance": 23
+      },
+      {
+        "City": 871,
+        "Distance": 25
+      },
+      {
+        "City": 574,
+        "Distance": 28
+      },
+      {
+        "City": 90,
+        "Distance": 30
+      },
+      {
+        "City": 268,
+        "Distance": 31
+      },
+      {
+        "City": 768,
+        "Distance": 31
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "X": 943,
+    "Y": 979,
+    "Neighbours": [
+      {
+        "City": 814,
+        "Distance": 8
+      },
+      {
+        "City": 409,
+        "Distance": 18
+      },
+      {
+        "City": 632,
+        "Distance": 21
+      },
+      {
+        "City": 955,
+        "Distance": 43
+      },
+      {
+        "City": 381,
+        "Distance": 47
+      },
+      {
+        "City": 31,
+        "Distance": 56
+      },
+      {
+        "City": 638,
+        "Distance": 57
+      },
+      {
+        "City": 552,
+        "Distance": 59
+      },
+      {
+        "City": 508,
+        "Distance": 61
+      },
+      {
+        "City": 336,
+        "Distance": 64
+      }
+    ]
+  },
+  {
+    "ID": 8,
+    "X": 676,
+    "Y": 846,
+    "Neighbours": [
+      {
+        "City": 930,
+        "Distance": 17
+      },
+      {
+        "City": 540,
+        "Distance": 19
+      },
+      {
+        "City": 455,
+        "Distance": 24
+      },
+      {
+        "City": 610,
+        "Distance": 25
+      },
+      {
+        "City": 625,
+        "Distance": 36
+      },
+      {
+        "City": 321,
+        "Distance": 41
+      },
+      {
+        "City": 602,
+        "Distance": 41
+      },
+      {
+        "City": 868,
+        "Distance": 50
+      },
+      {
+        "City": 78,
+        "Distance": 56
+      },
+      {
+        "City": 79,
+        "Distance": 63
+      }
+    ]
+  },
+  {
+    "ID": 9,
+    "X": 177,
+    "Y": 966,
+    "Neighbours": [
+      {
+        "City": 489,
+        "Distance": 18
+      },
+      {
+        "City": 201,
+        "Distance": 25
+      },
+      {
+        "City": 938,
+        "Distance": 37
+      },
+      {
+        "City": 110,
+        "Distance": 39
+      },
+      {
+        "City": 975,
+        "Distance": 39
+      },
+      {
+        "City": 784,
+        "Distance": 40
+      },
+      {
+        "City": 145,
+        "Distance": 41
+      },
+      {
+        "City": 390,
+        "Distance": 49
+      },
+      {
+        "City": 148,
+        "Distance": 50
+      },
+      {
+        "City": 869,
+        "Distance": 50
+      }
+    ]
+  },
+  {
+    "ID": 10,
+    "X": 186,
+    "Y": 365,
+    "Neighbours": [
+      {
+        "City": 459,
+        "Distance": 10
+      },
+      {
+        "City": 829,
+        "Distance": 36
+      },
+      {
+        "City": 838,
+        "Distance": 40
+      },
+      {
+        "City": 665,
+        "Distance": 52
+      },
+      {
+        "City": 807,
+        "Distance": 55
+      },
+      {
+        "City": 993,
+        "Distance": 59
+      },
+      {
+        "City": 81,
+        "Distance": 60
+      },
+      {
+        "City": 974,
+        "Distance": 60
+      },
+      {
+        "City": 641,
+        "Distance": 62
+      },
+      {
+        "City": 900,
+        "Distance": 67
+      }
+    ]
+  }
+]
