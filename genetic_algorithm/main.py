@@ -1,0 +1,2 @@
+texte = "moidd"
+print(texte)
