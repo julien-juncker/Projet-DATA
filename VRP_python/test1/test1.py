@@ -6,6 +6,14 @@ from ortools.constraint_solver import routing_enums_pb2
 from ortools.constraint_solver import pywrapcp
 
 
+def generateMatrix(Xmax, Ymax, Nb):
+	l_map = []
+	for i in range(Nb):
+		l_map.append([0] * Nb)
+
+
+
+
 def create_data_model():
     """Stores the data for the problem."""
     import json
