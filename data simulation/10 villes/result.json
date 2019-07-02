@@ -1,0 +1,432 @@
+[
+  {
+    "ID": 0,
+    "X": 1,
+    "Y": 3,
+    "Neighbours": [
+      {
+        "City": 1,
+        "Distance": 6
+      },
+      {
+        "City": 2,
+        "Distance": 1
+      },
+      {
+        "City": 3,
+        "Distance": 9
+      },
+      {
+        "City": 4,
+        "Distance": 4
+      },
+      {
+        "City": 5,
+        "Distance": 6
+      },
+      {
+        "City": 6,
+        "Distance": 1
+      },
+      {
+        "City": 7,
+        "Distance": 5
+      },
+      {
+        "City": 8,
+        "Distance": 4
+      },
+      {
+        "City": 9,
+        "Distance": 3
+      }
+    ]
+  },
+  {
+    "ID": 1,
+    "X": 2,
+    "Y": 9,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 6
+      },
+      {
+        "City": 2,
+        "Distance": 7
+      },
+      {
+        "City": 3,
+        "Distance": 7
+      },
+      {
+        "City": 4,
+        "Distance": 2
+      },
+      {
+        "City": 5,
+        "Distance": 2
+      },
+      {
+        "City": 6,
+        "Distance": 7
+      },
+      {
+        "City": 7,
+        "Distance": 6
+      },
+      {
+        "City": 8,
+        "Distance": 8
+      },
+      {
+        "City": 9,
+        "Distance": 7
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "X": 1,
+    "Y": 2,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 1
+      },
+      {
+        "City": 1,
+        "Distance": 7
+      },
+      {
+        "City": 3,
+        "Distance": 10
+      },
+      {
+        "City": 4,
+        "Distance": 5
+      },
+      {
+        "City": 5,
+        "Distance": 7
+      },
+      {
+        "City": 6,
+        "Distance": 1
+      },
+      {
+        "City": 7,
+        "Distance": 6
+      },
+      {
+        "City": 8,
+        "Distance": 4
+      },
+      {
+        "City": 9,
+        "Distance": 3
+      }
+    ]
+  },
+  {
+    "ID": 3,
+    "X": 9,
+    "Y": 8,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 9
+      },
+      {
+        "City": 1,
+        "Distance": 7
+      },
+      {
+        "City": 2,
+        "Distance": 10
+      },
+      {
+        "City": 4,
+        "Distance": 7
+      },
+      {
+        "City": 5,
+        "Distance": 9
+      },
+      {
+        "City": 6,
+        "Distance": 9
+      },
+      {
+        "City": 7,
+        "Distance": 4
+      },
+      {
+        "City": 8,
+        "Distance": 7
+      },
+      {
+        "City": 9,
+        "Distance": 8
+      }
+    ]
+  },
+  {
+    "ID": 4,
+    "X": 2,
+    "Y": 7,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 4
+      },
+      {
+        "City": 1,
+        "Distance": 2
+      },
+      {
+        "City": 2,
+        "Distance": 5
+      },
+      {
+        "City": 3,
+        "Distance": 7
+      },
+      {
+        "City": 5,
+        "Distance": 3
+      },
+      {
+        "City": 6,
+        "Distance": 5
+      },
+      {
+        "City": 7,
+        "Distance": 4
+      },
+      {
+        "City": 8,
+        "Distance": 6
+      },
+      {
+        "City": 9,
+        "Distance": 5
+      }
+    ]
+  },
+  {
+    "ID": 5,
+    "X": 0,
+    "Y": 9,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 6
+      },
+      {
+        "City": 1,
+        "Distance": 2
+      },
+      {
+        "City": 2,
+        "Distance": 7
+      },
+      {
+        "City": 3,
+        "Distance": 9
+      },
+      {
+        "City": 4,
+        "Distance": 3
+      },
+      {
+        "City": 6,
+        "Distance": 7
+      },
+      {
+        "City": 7,
+        "Distance": 7
+      },
+      {
+        "City": 8,
+        "Distance": 9
+      },
+      {
+        "City": 9,
+        "Distance": 8
+      }
+    ]
+  },
+  {
+    "ID": 6,
+    "X": 2,
+    "Y": 2,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 1
+      },
+      {
+        "City": 1,
+        "Distance": 7
+      },
+      {
+        "City": 2,
+        "Distance": 1
+      },
+      {
+        "City": 3,
+        "Distance": 9
+      },
+      {
+        "City": 4,
+        "Distance": 5
+      },
+      {
+        "City": 5,
+        "Distance": 7
+      },
+      {
+        "City": 7,
+        "Distance": 5
+      },
+      {
+        "City": 8,
+        "Distance": 3
+      },
+      {
+        "City": 9,
+        "Distance": 2
+      }
+    ]
+  },
+  {
+    "ID": 7,
+    "X": 6,
+    "Y": 5,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 5
+      },
+      {
+        "City": 1,
+        "Distance": 6
+      },
+      {
+        "City": 2,
+        "Distance": 6
+      },
+      {
+        "City": 3,
+        "Distance": 4
+      },
+      {
+        "City": 4,
+        "Distance": 4
+      },
+      {
+        "City": 5,
+        "Distance": 7
+      },
+      {
+        "City": 6,
+        "Distance": 5
+      },
+      {
+        "City": 8,
+        "Distance": 3
+      },
+      {
+        "City": 9,
+        "Distance": 4
+      }
+    ]
+  },
+  {
+    "ID": 8,
+    "X": 5,
+    "Y": 2,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 4
+      },
+      {
+        "City": 1,
+        "Distance": 8
+      },
+      {
+        "City": 2,
+        "Distance": 4
+      },
+      {
+        "City": 3,
+        "Distance": 7
+      },
+      {
+        "City": 4,
+        "Distance": 6
+      },
+      {
+        "City": 5,
+        "Distance": 9
+      },
+      {
+        "City": 6,
+        "Distance": 3
+      },
+      {
+        "City": 7,
+        "Distance": 3
+      },
+      {
+        "City": 9,
+        "Distance": 1
+      }
+    ]
+  },
+  {
+    "ID": 9,
+    "X": 4,
+    "Y": 2,
+    "Neighbours": [
+      {
+        "City": 0,
+        "Distance": 3
+      },
+      {
+        "City": 1,
+        "Distance": 7
+      },
+      {
+        "City": 2,
+        "Distance": 3
+      },
+      {
+        "City": 3,
+        "Distance": 8
+      },
+      {
+        "City": 4,
+        "Distance": 5
+      },
+      {
+        "City": 5,
+        "Distance": 8
+      },
+      {
+        "City": 6,
+        "Distance": 2
+      },
+      {
+        "City": 7,
+        "Distance": 4
+      },
+      {
+        "City": 8,
+        "Distance": 1
+      }
+    ]
+  }
+]
