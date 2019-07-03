@@ -1,6 +1,6 @@
-import numpy as np, random, operator, pandas as pd, matplotlib.pyplot as plt
+import numpy as np, random, operator, pandas as pd, matplotlib.pyplot as plt, matplotlib.pyplot as plt1
 import json
-
+import time
 
 
 class City:
@@ -154,6 +154,7 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
     print("Initial distance: " + str(1 / rankRoutes(pop)[0][1]))
 
     for i in range(0, generations):
+        #put all generations in result.txt
         writeFile("result.txt",str(pop))
         pop = nextGeneration(pop, eliteSize, mutationRate)
 
@@ -174,11 +175,27 @@ def writeFile(path,data):
 
 
 cityList = []
+X_position_city_list = []
+Y_position_city_list = []
 
-for i in range(0,25):
-    cityList.append(City(x=int(random.random() * 200), y=int(random.random() * 200)))
+for i in range(0,1000):
+    X_position_city=int(random.random() * 200)
+    Y_position_city=int(random.random() * 200)
 
+    X_position_city_list.append(X_position_city)
+    Y_position_city_list.append(Y_position_city)
+
+    #cityList.append(City(x=int(random.random() * 200), y=int(random.random() * 200)))
+    cityList.append(City(X_position_city,Y_position_city))
+
+
+
+#save all cities in city.txt
 writeFile("city.txt",str(cityList))
+#print("pop:"+str(cityList[0]))
+
+
+
 
 geneticAlgorithm(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
 
@@ -192,24 +209,27 @@ def geneticAlgorithmPlot(population, popSize, eliteSize, mutationRate, generatio
     for i in range(0, generations):
         pop = nextGeneration(pop, eliteSize, mutationRate)
         progress.append(1 / rankRoutes(pop)[0][1])
-
+    plt.figure(1)
     plt.plot(progress)
     plt.ylabel('Distance')
     plt.xlabel('Generation')
     plt.show()
 
-def mapPlot(population, popSize, eliteSize, mutationRate, generations):
-    pop = initialPopulation(popSize, population)
-    progress = []
-    progress.append(1 / rankRoutes(pop)[0][1])
+def mapPlot(list_city_X,list_city_Y):
+    plt1.figure(2)
+    for i in range(0,len(list_city_X)):
+        plt1.scatter(list_city_X[i],list_city_Y[i])
+        #print(list_city_X[i],list_city_Y[i])
 
-    for i in range(0, generations):
-        pop = nextGeneration(pop, eliteSize, mutationRate)
-        progress.append(1 / rankRoutes(pop)[0][1])
+    #plt1.grid()
+    plt1.show()
 
-    plt.plot(progress)
-    plt.ylabel('Distance')
-    plt.xlabel('Generation')
-    plt.show()
+
+
+
+
 
 geneticAlgorithmPlot(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
+mapPlot(X_position_city_list,Y_position_city_list)
+
+#print("bon"+str(len(X_position_city_list)))
