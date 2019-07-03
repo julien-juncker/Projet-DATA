@@ -1,4 +1,5 @@
 import numpy as np, random, operator, pandas as pd, matplotlib.pyplot as plt
+import json
 
 
 
@@ -153,12 +154,24 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
     print("Initial distance: " + str(1 / rankRoutes(pop)[0][1]))
 
     for i in range(0, generations):
+        writeFile("result.txt",str(pop))
         pop = nextGeneration(pop, eliteSize, mutationRate)
+
 
     print("Final distance: " + str(1 / rankRoutes(pop)[0][1]))
     bestRouteIndex = rankRoutes(pop)[0][0]
     bestRoute = pop[bestRouteIndex]
+    writeFile("bestroute.txt",str(bestRoute))
     return bestRoute
+
+
+def writeFile(path,data):
+    f = open(path, "w")
+    f.write(data)
+    f.close()
+
+
+
 
 cityList = []
 
