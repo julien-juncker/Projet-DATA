@@ -4,10 +4,8 @@ import numpy as np
 
 
 
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
 
-x=186
-y=137
-plt.scatter(x,y)
 
 
 plt.grid()

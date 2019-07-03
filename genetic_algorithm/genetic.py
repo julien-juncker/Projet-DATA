@@ -3,6 +3,14 @@ import json
 import time
 
 
+###############Variables###############
+NumberOfCities=1000
+GridMapLimitX=1000
+GridMapLimitY=1000
+#######################################
+
+
+
 start_time = time.time()
 
 class City:
@@ -17,8 +25,8 @@ class City:
         return distance
 
     def __repr__(self):
-        return "(" + str(self.x) + "," + str(self.y) + ")"
-
+        #return "[" + str(self.x) + "," + str(self.y) + "]"
+        return str([self.x,self.y])
 
 class Fitness:
     def __init__(self, route):
@@ -161,6 +169,7 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
         pop = nextGeneration(pop, eliteSize, mutationRate)
 
 
+
     print("Final distance: " + str(1 / rankRoutes(pop)[0][1]))
     bestRouteIndex = rankRoutes(pop)[0][0]
     bestRoute = pop[bestRouteIndex]
@@ -181,12 +190,18 @@ cityList = []
 X_position_city_list = []
 Y_position_city_list = []
 
-for i in range(0,2):
-    X_position_city=int(random.random() * 200)
-    Y_position_city=int(random.random() * 200)
+#
+for i in range(0,NumberOfCities):
+    #put random coord in var ,this coord are between delimiter defined at the top
+    X_position_city=int(random.random() * GridMapLimitX)
+    Y_position_city=int(random.random() * GridMapLimitY)
 
+
+    #create list
     X_position_city_list.append(X_position_city)
     Y_position_city_list.append(Y_position_city)
+
+
 
     #cityList.append(City(x=int(random.random() * 200), y=int(random.random() * 200)))
     cityList.append(City(X_position_city,Y_position_city))
@@ -200,7 +215,8 @@ writeFile("out_txt/city.txt",str(cityList))
 
 
 
-#geneticAlgorithm(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
+bestRouteEver=geneticAlgorithm(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
+
 
 
 #define plot for a drawing
@@ -219,10 +235,23 @@ def geneticAlgorithmPlot(population, popSize, eliteSize, mutationRate, generatio
     plt.show()
 
 def mapPlot(list_city_X,list_city_Y):
+
+    #drawing of point
     plt1.figure(2)
     for i in range(0,len(list_city_X)):
         plt1.scatter(list_city_X[i],list_city_Y[i])
+        print()
 
+    #drawing of segment
+    with open("out_txt/bestroute.txt") as json_file:
+        data_best_route = json.load(json_file)
+
+    listXGraphRoute = []
+    listYGraphRoute = []
+    for (x, y) in data_best_route:
+        listXGraphRoute.append(x)
+        listYGraphRoute.append(y)
+    plt.plot(listXGraphRoute, listYGraphRoute)
     plt1.show()
 
 
@@ -230,8 +259,8 @@ def mapPlot(list_city_X,list_city_Y):
 
 
 
-#geneticAlgorithmPlot(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
-#mapPlot(X_position_city_list,Y_position_city_list)
+geneticAlgorithmPlot(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
+mapPlot(X_position_city_list,Y_position_city_list)
 
 print("Temps d execution : %s secondes ---" % (time.time() - start_time))
 writeFile("out_txt/time.txt",str((time.time() - start_time)))
