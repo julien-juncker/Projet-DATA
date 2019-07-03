@@ -155,14 +155,14 @@ def geneticAlgorithm(population, popSize, eliteSize, mutationRate, generations):
 
     for i in range(0, generations):
         #put all generations in result.txt
-        writeFile("result.txt",str(pop))
+        writeFile("out_txt/result.txt",str(pop))
         pop = nextGeneration(pop, eliteSize, mutationRate)
 
 
     print("Final distance: " + str(1 / rankRoutes(pop)[0][1]))
     bestRouteIndex = rankRoutes(pop)[0][0]
     bestRoute = pop[bestRouteIndex]
-    writeFile("bestroute.txt",str(bestRoute))
+    writeFile("out_txt/bestroute.txt",str(bestRoute))
     return bestRoute
 
 
@@ -178,7 +178,7 @@ cityList = []
 X_position_city_list = []
 Y_position_city_list = []
 
-for i in range(0,1000):
+for i in range(0,2):
     X_position_city=int(random.random() * 200)
     Y_position_city=int(random.random() * 200)
 
@@ -191,8 +191,8 @@ for i in range(0,1000):
 
 
 #save all cities in city.txt
-writeFile("city.txt",str(cityList))
-#print("pop:"+str(cityList[0]))
+writeFile("out_txt/city.txt",str(cityList))
+
 
 
 
@@ -219,9 +219,7 @@ def mapPlot(list_city_X,list_city_Y):
     plt1.figure(2)
     for i in range(0,len(list_city_X)):
         plt1.scatter(list_city_X[i],list_city_Y[i])
-        #print(list_city_X[i],list_city_Y[i])
 
-    #plt1.grid()
     plt1.show()
 
 
@@ -232,4 +230,3 @@ def mapPlot(list_city_X,list_city_Y):
 geneticAlgorithmPlot(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
 mapPlot(X_position_city_list,Y_position_city_list)
 
-#print("bon"+str(len(X_position_city_list)))
