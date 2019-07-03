@@ -3,6 +3,8 @@ import json
 import time
 
 
+start_time = time.time()
+
 class City:
     def __init__(self, x, y):
         self.x = x
@@ -173,6 +175,7 @@ def writeFile(path,data):
 
 
 
+#Cities generation
 
 cityList = []
 X_position_city_list = []
@@ -197,7 +200,7 @@ writeFile("out_txt/city.txt",str(cityList))
 
 
 
-geneticAlgorithm(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
+#geneticAlgorithm(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
 
 
 #define plot for a drawing
@@ -227,6 +230,8 @@ def mapPlot(list_city_X,list_city_Y):
 
 
 
-geneticAlgorithmPlot(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
-mapPlot(X_position_city_list,Y_position_city_list)
+#geneticAlgorithmPlot(population=cityList, popSize=100, eliteSize=20, mutationRate=0.01, generations=500)
+#mapPlot(X_position_city_list,Y_position_city_list)
 
+print("Temps d execution : %s secondes ---" % (time.time() - start_time))
+writeFile("out_txt/time.txt",str((time.time() - start_time)))
