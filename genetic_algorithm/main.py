@@ -15,3 +15,11 @@ def get_neighbours_id(id,nbr_item):
 
 
 
+def writeFile():
+    f = open("test.txt", "r")
+    f.write("Now the file has more content!")
+    f.close()
+
+writeFile()
+
+
