@@ -22,8 +22,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="test1.py" />
+    <Compile Include="test2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test3.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="result.json" />
     <Content Include="test10.json" />
     <Content Include="test20.json" />
     <Content Include="test50.json" />
