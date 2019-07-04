@@ -16,10 +16,16 @@ class city:
         self.X = 0
         self.Y = 0
 
+class result:
+    def __init__(self):
+        self.onetruck = []
+        self.twotruck = []
+        self.threetruck = []
+        self.fourtruck = []
+
 def generate_matrix(population, xmax, ymax):
     matrix = [[0 for x in range(population)] for y in range(population)]
     points = []
-    matrix[2][2] = 5
 
     for i in range(population):
         temp = city()
@@ -65,6 +71,9 @@ def print_solution(data, manager, routing, solution):
         print(plan_output)
         max_route_distance = max(route_distance, max_route_distance)
     print('Maximum of the route distances: {}m'.format(max_route_distance))
+    file = open("result.json","a")
+    file.writelines( str(max_route_distance) + ":")
+    file.close()
 
 def launch(nbtruck, population, xmax, ymax):
     data = create_data_model(nbtruck, population, xmax, ymax)
@@ -100,11 +109,59 @@ def launch(nbtruck, population, xmax, ymax):
     return end_time - start_time
 
 def main():
-    temp = []
-    for i in range(1):
-        temp.append(launch(1,100, 400, 400))
-    
-    print(sum(temp) / len(temp))
+    res = result()
+    file = open("result.json","a")
+    for j in range(200):
+        temp = []
+        #for i in range(5):
+        #temp.append(launch(4, 75, 400, 400))
+        #res.onetruck.append(sum(temp) / len(temp))
+        #file.writelines(str(j + 10))
+        l = launch(4, 30, 400, 400)
+        file.writelines("4:" + str(l) + ":4\n")
+        file.flush()
+    #for j in range(40):
+    #    temp = []
+    #    for i in range(5):
+    #        temp.append(launch(2,j + 10, 800, 800))
+    #    res.twotruck.append(sum(temp) / len(temp))
+    #    file.writelines(str(j + 10))
+    #    file.writelines(":" + str(res.twotruck[j]) + ":2\n")
+    #    file.flush()
+    #for j in range(40):
+    #    temp = []
+    #    for i in range(5):
+    #        temp.append(launch(3,j + 10, 800, 800))
+    #    res.threetruck.append(sum(temp) / len(temp))
+    #    file.writelines(str(j + 10))
+    #    file.writelines(":" + str(res.threetruck[j]) + ":3\n")
+    #    file.flush()
+    #for j in range(40):
+    #    temp = []
+    #    for i in range(5):
+    #        temp.append(launch(4,j + 10, 800, 800))
+    #    res.fourtruck.append(sum(temp) / len(temp))
+    #    file.writelines(str(j + 10))
+    #    file.writelines(":" + str(res.fourtruck[j]) + ":4\n")
+    #    file.flush()
+    #for j in range(40):
+    #    temp = []
+    #    for i in range(5):
+    #        temp.append(launch(5,j + 10, 800, 800))
+    #    res.fourtruck.append(sum(temp) / len(temp))
+    #    file.writelines(str(j + 10))
+    #    file.writelines(":" + str(res.fourtruck[j]) + ":5\n")
+    #    file.flush()
+    #for j in range(40):
+    #    temp = []
+    #    for i in range(5):
+    #        temp.append(launch(6,j + 10, 800, 800))
+    #    res.fourtruck.append(sum(temp) / len(temp))
+    #    file.writelines(str(j + 10))
+    #    file.writelines(":" + str(res.fourtruck[j]) + ":6\n")
+    #    file.flush()
+    #file.writelines("")
+    file.close()
 
 if __name__ == '__main__':
     main()
